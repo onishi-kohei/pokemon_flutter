@@ -42,17 +42,18 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+          children: [
+            Image.network(
+              "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+              height: 100,
+              width: 100,
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+            const Text(
+              'pikachu',
+              style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
             ),
           ],
-        ),
+        )
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
