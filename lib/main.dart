@@ -53,6 +53,10 @@ class _MyHomePageState extends State<MyHomePage> {
               'pikachu',
               style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
             ),
+            const Chip(
+              label: Text('electric'),
+              backgroundColor: Colors.yellow,
+            ),
           ],
         )
       ), // This trailing comma makes auto-formatting nicer for build methods.
